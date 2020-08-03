@@ -7,8 +7,21 @@ describe('webdriver.io page', () => {
         browser.url('https://emplea.do');
          $('a*= Inicia sesión').click();
         $('button*= Accede con Google').click();
-        $('.Xb9hP input').setValue("Open2022*");
+      
+        $('[name="identifier"]').setValue("enmanuelcruzdejesus@gmail.com");
         $('.VfPpkd-RLmnJb').click();
+      
+        $('[name="password"]').waitForExist({ timeout: 20000 });
+        browser.pause(3000);
+        $(".Xb9hP input").setValue("Open2022*");
+        $('.VfPpkd-RLmnJb').click();
+        expect(browser).toHaveUrl('https://emplea.do/jobs/wizard#');
+        // var pageUrl = browser.getUrl();
+        // expect(pageUrl,"https://emplea.do/jobs/wizard");
+
+      
+
+      
     })
     
 
