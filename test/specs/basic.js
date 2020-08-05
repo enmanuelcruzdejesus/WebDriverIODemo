@@ -1,4 +1,4 @@
-describe('webdriver.io page', () => {
+describe('empleo suitcase', () => {
 
     function login(){
         browser.url('https://emplea.do');
@@ -50,9 +50,10 @@ describe('webdriver.io page', () => {
         expect(browser).toHaveUrlContaining('/Jobs/Details/');
        
 
-
-
-
     })
-
+    
 })
+
+
+
+
