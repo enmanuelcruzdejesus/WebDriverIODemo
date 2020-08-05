@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio wdio.config.js"
+    "test": "npx wdio wdio.config.js",
+    "generateMochawesome":"marge /Users/enmanuelcruz/Projects/WebDriverIODemo/results.json --reportTitle 'My Project Results'"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,10 @@
     "@wdio/sync": "^6.3.3",
     "chromedriver": "^84.0.1",
     "wdio-chromedriver-service": "^6.0.3",
+    "wdio-mochawesome-reporter": "^4.0.0",
     "webdriverio": "^6.3.5"
+  },
+  "dependencies": {
+    "mochawesome-report-generator": "^5.1.0"
   }
 }

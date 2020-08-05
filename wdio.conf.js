@@ -23,6 +23,11 @@
     exclude: [
         // 'path/to/excluded/files'
     ],
+    reporters: ['dot', 'mochawesome'],
+    mochawesomeOpts: {
+        includeScreenshots:true,
+        screenshotUseRelativePath:true
+    },
     //
     // ============
     // Capabilities
